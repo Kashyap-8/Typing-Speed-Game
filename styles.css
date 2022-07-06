@@ -77,6 +77,9 @@ div.word{
 .letter.incorrect{
     color: #f55;
 }
+#game:focus #cursor {
+    display: block;
+}
 
 #cursor-{
     width: 2px;
@@ -87,3 +90,10 @@ div.word{
     left: 80px;
 }
 
+#game.over #words{
+    opacity: .5;
+    filter: blur(0px);
+}
+#game.over:focus #cursor{
+    display:none;
+}
